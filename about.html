@@ -6,63 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - TODOLY</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="./css/aboutstyle.css">
 </head>
 
 <body>
+
     <header>
-        <div id="logo">
-            <img src="pic/logo.png" alt="">
+        <div class="head">
+            <nav>
+                <ul>
+                    <li> <a href="index.html"><img src="pic/logo.png" alt="logo"></a></li>
+                    <li><a href="index.html">
+                            <h3> TODOLY </h3>
+                        </a></li>
+                    <li> <a href="index.html">
+                            <p id="homenav"> Home</p>
+                        </a> </li>
+                    <li> <a href="about.html">
+                            <p id="aboutnav">About</p>
+                        </a></li>
 
-        </div>
-        <br>
 
-        <div id="web-name">
-            <h1> TODOLY </h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
+                </ul>
+            </nav>
 
     </header>
 
+
+
+
+
+
+
+
+
+
     <main>
-        <section id="about">
+
+
+        <div id="about">
+
             <h2>About</h2>
 
-        </section>
-        <h3> What is TODOLY?</h3>
-        <p id="description">TODOLY makes doing your everyday tasks <br>
-            more fun and exciting with our awesome features. <br>
-            Try us and join the family!</p>
+
+            <h3> What is TODOLY?</h3>
+
+            <p id="description">TODOLY makes doing your everyday tasks <br>
+                more fun and exciting with our awesome features. <br>
+                Try us and join the family!</p>
+        </div>
+
 
         <h3>Contact Information</h3>
-        <section>
-            <label for="name">What is your Name?</label> <br>
-            <input type="text">
-            <br>
-            <label for="email">What is your Email?</label> <br>
-            <input type="email"> <br>
-            <label for="message">Message</label> <br>
-            <input type="text"> <br>
-            <button>Submit</button>
-        </section>
+        <div>
+            <form action="form">
+                <label for="name"> Your Name?</label> <br>
+                <input type="text" placeholder="ex: Chris">
+                <br>
+                <label for="email">Your Email?</label> <br>
+                <input type="email" placeholder="ex: chris12@email.com"> <br>
+                <label for="Phone"> Your Phone Number? </label> <br>
+                <input type="number" placeholder="07"> <br>
+                <label for="message">About yourself:</label> <br>
+                <textarea name="message" id="message" cols="20" rows="3" placeholder="description"></textarea><br>
+                <button type="submit" value="submit">Submit</button>
+            </form>
+
+        </div>
+
     </main>
 
-    <footer>
-        <br><br>
-        <div id="logo">
-            <img src="pic/logo.png" alt="">
-    
-        </div>
-        
-        <div id ="copyrights"> <p> All Copyrights Reserved</p>
-        </div>
 
+    <footer>
+        <div class="footer">
+
+            <h3> TODOLY </h3>
+            <p> © 2022 ASAC All Copyrights Reserved</p>
+        </div>
     </footer>
 </body>
 

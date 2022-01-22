@@ -6,86 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - TODOLY</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="./css/indexstyle.css">
 </head>
 
 <body>
     <header>
-        <div id="logo">
-            <img src="pic/logo.png" alt="">
+        <div class="head">
+            <nav>
+                <ul>
+                    <li> <a href="index.html"><img src="pic/logo.png" alt="logo"></a></li>
+                    <li><a href="index.html">
+                            <h3> TODOLY </h3>
+                        </a></li>
+                    <li> <a href="index.html">
+                            <p id="homenav"> Home</p>
+                        </a> </li>
+                    <li> <a href="about.html">
+                            <p id="aboutnav">About</p>
+                        </a></li>
 
-        </div>
-        <br>
 
-        <div id="web-name">
-            <h1> TODOLY </h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+                </ul>
+            </nav>
 
     </header>
 
+
+
     <main>
-        <section id="home">
+
+        <div id="table">
             <h2>Home</h2>
 
-        </section>
+            <h2> To do list </h2>
 
-        <h3> To do list</h3>
-        <form action="form">
-            <div id = "table">
+            <form action="form">
+
                 <table>
-                    <tr>
+
+                    <tr class="row">
                         <th>Task</th>
+                        <th>Check</th>
                         <th>Status</th>
                     </tr>
-                    <tr>
-                        <td><input type="text"></td>
+                    <tr class="row">
+                        <td><label for="study">Study Programming</label></td>
                         <td><input type="checkbox"></td>
+                        <td><input type="color" value="#FF0000"></td>
                     </tr>
-                    <tr>
-                        <td><input type="text"></td>
+                    <tr class="row">
+                        <td> <label for="HW">Do my homework</label> </td>
                         <td><input type="checkbox"></td>
+                        <td><input type="color" value="#FF0000"></td>
                     </tr>
-                    <tr>
-                        <td><input type="text"></td>
+                    <tr class="row">
+                        <td><label for="book">Book Tickets</label></td>
                         <td><input type="checkbox"></td>
+                        <td><input type="color" value="#00FF00"></td>
                     </tr>
-                    <tr>
-                        <td><input type="text"></td>
+                    <tr class="row">
+                        <td><label for="workout">Workout</label></td>
                         <td><input type="checkbox"></td>
+                        <td><input type="color" value="#00FF00"></td>
                     </tr>
-                    <tr>
-                        <td><input type="text"></td>
+                    <tr class="row">
+                        <td><label for="german">Read German</label></td>
                         <td><input type="checkbox"></td>
+                        <td><input type="color" value="#00FF00"></td>
                     </tr>
 
 
                 </table>
-            </div>
-        </form>
+            </form>
+        </div>
+
 
     </main>
-    
-    <footer>
-        <br><br>
-        <div id="logo">
-            <img src="pic/logo.png" alt="">
-    
-        </div>
-        
-        <div id ="copyrights"> <p> All Copyrights Reserved</p>
-        </div>
 
+
+    <footer>
+        <div class="footer">
+
+            <h3> TODOLY </h3>
+            <p> © 2022 ASAC All Copyrights Reserved</p>
+        </div>
     </footer>
 
 
-
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
