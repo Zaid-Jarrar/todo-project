@@ -29,13 +29,13 @@ if (message === 'YES') {
 }
 else {
   if (gender === 'MALE') {
-    alert(`welcome to Mr. ${name} the website`);
+    alert(`welcome to Mr. ${name} to the our website`);
   }
   else if (gender === 'FEMALE') {
-    alert(`welcome to Mrs. ${name} the website`);
+    alert(`welcome to Mrs. ${name} to the our website`);
   }
   else {
-    alert(`welcome ${name} to the website`);
+    alert(`welcome ${name} to the our website`);
   }
 
 }
