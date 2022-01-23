@@ -37,7 +37,7 @@ else {
     alert(`welcome to Mrs. ${name} to the our website`);
   }
   else {
-    alert(`welcome ${name} to the our website`);
+    alert('welcomee} to the our website');
   }
 
 }
@@ -45,11 +45,22 @@ else {
 
 
 
+function survey (questions) {
+  let answers = [];
+  for (let index = 0; index < questions.length; index++) {
+    // eslint-disable-next-line no-unused-vars
+    let firstAnswers = prompt(questions[index]).toLowerCase();
+    if (firstAnswers === ''){
+      answers.push('Invalid');}
+    else if(firstAnswers === 'yes' || firstAnswers === 'no'){
+      answers.push(firstAnswers);}
+    else{
+      alert('Invalid entry');
+    }
+  }
+  console.log(answers);
+  return answers;
+}
 
-
-
-
-
-
-
-
+survey(['Do you like food?',
+  'Do think coding is easy?','Do you speak English?']);
