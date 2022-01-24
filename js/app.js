@@ -37,7 +37,7 @@ else {
     alert(`welcome to Mrs. ${name} to the our website`);
   }
   else {
-    alert('welcomee} to the our website');
+    alert('welcomee to the our website');
   }
 
 }
