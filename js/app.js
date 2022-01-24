@@ -46,8 +46,9 @@ else {
 
 
 function survey (questions) {
-  let answers = [];
+
   for (let index = 0; index < questions.length; index++) {
+    let answers = [];
     // eslint-disable-next-line no-unused-vars
     let firstAnswers = prompt(questions[index]).toLowerCase();
     if (firstAnswers === ''){
@@ -57,9 +58,10 @@ function survey (questions) {
     else{
       alert('Invalid entry');
     }
+    console.log(answers);
   }
-  console.log(answers);
-  return answers;
+  // console.log(answers);
+  // return answers;
 }
 
 survey(['Do you like food?',
